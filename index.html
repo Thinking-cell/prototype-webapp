@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
 
 </head>
 
@@ -18,37 +20,82 @@
 
         <div class="header">
 
-                <div class="header-content">
-                <div class="logo"></div>
-                    
-                <input type="checkbox" id="sidebar-active">
-                <label for="sidebar-active" class="open-sidebar-button">
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>          </label>
+            <div class="header-content"> 
+                <div class="header-logo">
+                    <img src="./assets/images/logo-transparent.svg" alt="XYZ company logo">
+                </div>
                 <label id="overlay" for="sidebar-active"></label>
-        
-
-                <div class="navbar">
-                    <label for="sidebar-active" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>                </label>
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#join-us">Careers</a>
-                    <a href="#about-us">About Us</a>
-                    <a id="navbar-btn" href="#get-quote">Request a quote</a>
                     
-                    
+                <div class="nav-menu">
+                    <ul>
+                        <li class="nav-menu-link"><a href="#home">Home</a></li>
+                        <li class="nav-menu-link"><a href="#services">Services</a></li>
+                        <li class="nav-menu-link"><a href="#join-us">Careers</a></li>
+                        <li class="nav-menu-link"><a href="#about-us">About Us</a></li>
+                        <li id="sidebar-quote-btn" class="nav-menu-link"><a  href="#about-us">Request a quote</a></li>
+                    </ul>
                     
                 </div>
-                <a id="header-btn" href="#get-quote">Request quote</a>
-            
 
+                <div class="sidebar-btns">
+                    <a id="nav-quote-btn" href="#get-quote">Request quote</a>
+                    <a href="#" class="nav-hamburger">
+                        <span class="nav-hamburger-line"></span>
+                        <span class="nav-hamburger-line"></span>
+                        <span class="nav-hamburger-line"></span>
+                    </a>
+                    
+                </div>
+                
+                
+                
             </div>
+                
+        </div>
+
+        <div class="hh-bg-img"></div>
+
+        <div class="hero">
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="anim-text-reveal-top ">Your Safety, Our Mission</h1>
+                    <p class="anim-text-reveal-bottom anim-delay-1sec">At XYZ, we are committed to ensuring your safety every day. 
+                        Our experienced team offers personalized security solutions to meet your 
+                        unique needs. With continuous monitoring and fast response times, 
+                        we work tirelessly to keep you secure. 
+                        <p class="anim-text-reveal-bottom anim-delay-1sec">Trust us to protect what matters 
+                            most</p>
+                        <p class="anim-text-reveal-bottom anim-delay-1sec">—because your safety is our top priority</p>
+                    </p>
+                    
+                </div>
+                <div class="hero-links">
+                    <a class="anim-text-reveal-left anim-delay-1sec" href="#services">Explore Services</a>
+                    <a class="anim-text-reveal-right anim-delay-1sec" href="#aboutus">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-box-content">
+                <h1><span class="anim-underline-expand ">Expertise, You Can Trust</span>  </h1>
+                <p>As a local security provider,<span class="red-bold"> XYZ</span>  understands the unique safety challenges of our community.
+                   Our highly trained professionals bring extensive experience, offering personalized 
+                   security solutions tailored to your needs. We know our neighborhoods, ensuring effective 
+                   strategies that prioritize your safety. When you choose us, you’re partnering with a 
+                   team that genuinely cares about protecting what matters most to you right here at home.
+                </p>
+            </div>
+        </div>
+
         </div>
         
 
     </div>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
+    <script src="./scripts/navbar.js" defer></script>
 </body>
 
 </html>
