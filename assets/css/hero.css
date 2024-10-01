@@ -1,6 +1,14 @@
 
 /* hero section styling*/
+:root{
 
+  --color-1:#780000;
+  --color-2:#C1121F;
+  --color-3:#FEFDFF;
+  --color-4:#003049;
+  --color-5:#669BBC;
+  --color-6:#0F1A20;
+}
 .hh-bg-img{
     position: absolute;
     width: 100%;
@@ -24,7 +32,7 @@
     color: #FEFDFF;
     text-shadow:1px 1px 20px black;
     font-size: 1.1rem;
-    height: 500px;
+    height: 550px;
     
   
    
@@ -60,29 +68,7 @@
   
     
   }
-  .hero-links a{
-    text-align: center;
-    text-decoration: none;
-    height: fit-content;
-    color: var(--color-3);
-    border-top: 3px solid var(--color-1);
-    border-right: 3px solid var(--color-1);
-    background-color: var(--color-2);
-    border-radius: 3px;
-    padding: 7px 16px;
-    margin: 0 10px;
-    
-  }
   
-  .hero-links a:hover{
-  
-    background-color: var(--color-1);
-    -webkit-transition: background-color 300ms linear;
-    -ms-transition: background-color 300ms linear;
-    transition: background-color 300ms linear;
-    
-  
-  }
   
   /*responsive styling*/
   @media(max-width: 1780px){

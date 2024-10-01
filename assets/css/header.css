@@ -9,11 +9,23 @@
   --color-6:#0F1A20;
 }
 
+/* scroll on class for header*/
+.header-background{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 1.4rem;
+}
 
-
+.nav-menu.nav-border{
+  border-bottom: 3px solid var(--color-1);
+}
 
 /* header and navbar styling*/
 
+.header{
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
 
 .header-content{
   color: var(--color-1);
@@ -35,8 +47,8 @@
   width: 50%;
   display: flex;
   justify-content: space-around;
+  align-items: end;
   margin: 0 auto;
-  border-bottom: 3px solid var(--color-1);
   padding: 0 0 3px 0;
  
 }
@@ -45,18 +57,29 @@
   margin: 0;
   padding: 0;
   display:flex ;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-around;
+ 
 }
 
 .nav-menu ul li{
   list-style: none;
 }
 .nav-menu ul li a, #nav-quote-btn{
+  font-size: large;
   text-decoration: none;
   color: var(--color-3);
-  padding: 1rem;
+  max-height: 18px;
+  width: auto;
+  padding: 0.9rem 1.2rem;
   display: block;
-  margin: 0 1rem;
+  border-radius: 3px;
+  
+
+}
+
+#nav-quote-btn{
+  margin: 0.3rem 0.45rem 0 0;
 }
 
 .nav-menu ul li a:hover, #nav-quote-btn:hover{
@@ -102,17 +125,14 @@
 
 @media(max-width: 1780px){
   /*header styling*/
-  .nav-menu ul li a, #nav-quote-btn{
-    margin: 0 20px;
-  }
-  
+ 
 }
 
 @media(max-width: 830px){
   /*header styling*/
 
   .nav-menu ul li a, #nav-quote-btn{
-    margin: 0;
+    margin: 0 3px;
   }
   .nav-menu{
     width:fit-content ;
@@ -143,7 +163,7 @@
     display: flex;
     align-items: center;
     background-color: rgba(148, 175, 175, 0.9);
-    top: -25rem;
+    top: -35rem;
     width: 100%;
     height: fit-content;
     z-index: 9;
@@ -160,6 +180,9 @@
     padding: 3rem 0 0.6rem;
 
   }
+  .nav-menu ul li a{
+    margin: 1rem 0;
+  }
 
   #sidebar-quote-btn{
     display: flex;
@@ -171,12 +194,14 @@
     transition:all ease-in-out 0.2s;
   }
   #overlay{
+    display: none;
     height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 8;
+    z-index: 9;
+    
   }
 
   .nav-menu.active{

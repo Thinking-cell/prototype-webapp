@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/hero.css">
+    <script>//window.onbeforeunload = () => { window.scrollTo(0, 0);}</script>
 
 </head>
 
 <body>
     <div id="root">
 
-        <div class="header">
+        <header class="header" >
 
-            <div class="header-content"> 
+            <div class="header-content" > 
                 <div class="header-logo">
                     <img src="./assets/images/logo-transparent.svg" alt="XYZ company logo">
                 </div>
@@ -39,7 +40,7 @@
 
                 <div class="sidebar-btns">
                     <a id="nav-quote-btn" href="#get-quote">Request quote</a>
-                    <a href="#" class="nav-hamburger">
+                    <a class="nav-hamburger">
                         <span class="nav-hamburger-line"></span>
                         <span class="nav-hamburger-line"></span>
                         <span class="nav-hamburger-line"></span>
@@ -51,11 +52,11 @@
                 
             </div>
                 
-        </div>
+        </header>
 
         <div class="hh-bg-img"></div>
 
-        <div class="hero">
+        <div class="hero" style="overflow: hidden;">
             
             <div class="hero-content">
                 <div class="hero-text">
@@ -64,33 +65,302 @@
                         Our experienced team offers personalized security solutions to meet your 
                         unique needs. With continuous monitoring and fast response times, 
                         we work tirelessly to keep you secure. 
-                        <p class="anim-text-reveal-bottom anim-delay-1sec">Trust us to protect what matters 
-                            most</p>
+                        <h3 class="anim-text-reveal-bottom anim-delay-1sec">Trust us to protect what matters 
+                            most</h3>
                         <p class="anim-text-reveal-bottom anim-delay-1sec">—because your safety is our top priority</p>
                     </p>
                     
                 </div>
                 <div class="hero-links">
-                    <a class="anim-text-reveal-left anim-delay-1sec" href="#services">Explore Services</a>
-                    <a class="anim-text-reveal-right anim-delay-1sec" href="#aboutus">Learn more</a>
+                    <a class="anim-text-reveal-left anim-delay-2sec btn-dred" href="#services">Explore Services</a>
+                    <a class="anim-text-reveal-right anim-delay-2sec btn-dred" href="#aboutus">Learn more</a>
                 </div>
                 
             </div>
         </div>
 
-        <div class="info-box">
-            <div class="info-box-content">
-                <h1><span class="anim-underline-expand ">Expertise, You Can Trust</span>  </h1>
-                <p>As a local security provider,<span class="red-bold"> XYZ</span>  understands the unique safety challenges of our community.
-                   Our highly trained professionals bring extensive experience, offering personalized 
-                   security solutions tailored to your needs. We know our neighborhoods, ensuring effective 
-                   strategies that prioritize your safety. When you choose us, you’re partnering with a 
-                   team that genuinely cares about protecting what matters most to you right here at home.
-                </p>
+        <div class="info-box font-clr-navy mt-5">
+           
+            <div class="info-box-content " >
+                <div id="hero-info-box-text" class="info-box-text" >
+                    <h1><span class="anim-underline-expand ">Expertise, You Can Trust</span>  </h1>
+                    <p>As a local security provider,<span class="font-clr-red bolder"> XYZ</span>  understands the unique safety challenges of our community.
+                    Our highly trained professionals bring extensive experience, offering personalized 
+                    security solutions tailored to your needs. We know our neighborhoods, ensuring effective 
+                    strategies that prioritize your safety. When you choose us, you’re partnering with a 
+                    team that genuinely cares about protecting what matters most to you right here at home.
+                    </p>
+                </div>
+                <div class="card " >
+                    <div class="card-content">
+                        <div class="card-row">
+                            <h3>Professionalism</h3>
+                            <p>Maintain a high standard of service through thorough training,
+                                appearance, and behavior of all staff members.</p>
+                        </div>
+                        <div class="card-row">
+                            <h3>Preparedness</h3>
+                            <p>Ensure readiness for any situation through regular training, drills, 
+                                and updates to security protocols.</p>
+                        </div>
+                        <div class="card-row bdr-btm-navy">
+                            <h3>Personalization</h3>
+                            <p>Customize security solutions to fit the unique needs and circumstances of each client, ensuring effective protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="info-box font-clr-white ">
+            <div class="info-box-bg-img"></div>
+            <div class="info-box-content p-3 text-shadow">
+                <div class="info-box-text">
+                    <h1><span class="underline-h-dred ">Our Mission</span></h1>
+                    <p>Is to create a safer and more connected community 
+                        in<span class="font-clr-navy bolder"> North Bay</span>. We are committed to providing 
+                        reliable security solutions that empower our clients. By prioritizing trust and engagement,
+                        we aim to build lasting relationships that enhance safety for 
+                        all.
+                    </p>
+                </div>
             </div>
         </div>
 
-        </div>
+        <section class="industries" style="overflow: hidden;">
+
+            <div class="info-box font-clr-navy mt-5">
+                
+                <div class="info-box-content p-3">
+                    <div class="info-box-text">
+                        <h1><span class="underline-dred ">Providing Expertise</span> in multitude of industries</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--
+            <div class="img-box sway-left mt-3 anim-on-scroll hide">
+                <div class="img-box-content background-black font-clr-white bold ">
+                    <div class="img-box-img "><img src="./assets/images/img-industry-1.jpg" alt="XYZ securtiy guard driving to one of the site"></div>
+                    <div class="img-box-text text-shadow">
+                        <h1>Condominium</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu
+                            lpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" img-box sway-right mt-3 anim-on-scroll hide ">
+                <div class="img-box-content background-white bold">
+                    <div class="img-box-img "><img src="./assets/images/img-industry-2.png" alt="XYZ securtiy guard driving to one of the site"></div>
+                    <div class="img-box-text text-shadow">
+                        <h1 class="font-clr-dred bolder">Logistics</h1>
+                        <p class="font-clr-navy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu
+                            lpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu
+                            lpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box sway-left mt-3 anim-on-scroll hide ">
+                <div class="img-box-content background-dred font-clr-white  bold">
+                    <div class="img-box-img "><img src="./assets/images/img-industry-1.jpg" alt="XYZ securtiy guard driving to one of the site"></div>
+                    <div class="img-box-text text-shadow">
+                        <h1>Railway maintenance and Operation </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in cu
+                            lpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="services">
+            <div class="info-box font-clr-navy">
+                <div class="info-box-content p-3">
+                    <div class="info-box-text" style="width: 100%;">
+                        <h1><span class="underline-dred ">Our Services</span> </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services-content">
+             
+                <div class="services-grid">
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-1.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-2.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-3.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-4.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-5.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-6.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-7.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-8.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                   <div class="services-box">
+                      <div class="image">
+                         <img src="images/img-9.jpg" alt="">
+                      </div>
+                      <div class="content">
+                         <h3>blog title goes here</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, adipisci!</p>
+                         <a href="#" class="btn">read more</a>
+                         <div class="icons">
+                            <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                            <span> <i class="fas fa-user"></i> by admin </span>
+                         </div>
+                      </div>
+                   </div>
+             
+                </div>
+             
+                <div id="load-more"> load more </div>
+             
+             </div>
+            -->
+           
+        </section>
+
+
+
+        
         
 
     </div>
