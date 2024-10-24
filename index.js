@@ -74,12 +74,12 @@ function scrollAnimationCallback(entries){
         if(target.classList.contains('sway-left')){
           target.classList.add('anim-text-reveal-left')
           target.classList.toggle('hide')
-          console.log("swaying left")
+          //console.log("swaying left")
 
         }else if(target.classList.contains('sway-right')){
           target.classList.add('anim-text-reveal-right')
           target.classList.toggle('hide')
-          console.log("swaying right")
+          //console.log("swaying right")
         }else{
           //default animation
         }
@@ -93,5 +93,14 @@ function scrollAnimationCallback(entries){
 
 function observeTargets(observer, targets){
   targets.forEach(target =>{observer.observe(target)})
+}
+
+// animations
+function expandContentToMax(content){
+
+}
+
+function shrinkContent(content, shrinkedHeight){
+
 }
 
