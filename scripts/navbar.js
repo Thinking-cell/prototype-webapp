@@ -19,6 +19,7 @@ navbarActive()
 
 
 // changing header background on scroll
+navMenu.classList.add('nav-border') //initalize nav border
 window.onscroll = ()=>{
   
     let header = document.querySelector('header')
@@ -47,7 +48,7 @@ function navbarActive(){
     
     window.addEventListener("resize", ()=>{
         if (window.matchMedia("(max-width : 550px)").matches){
-            closeMenu();
+            closeMenu()
         
         }
     })

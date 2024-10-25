@@ -84,6 +84,8 @@ body{
   padding: 2rem;
 }
 
+
+
 .sway-left{
   padding-right: 20px;
   text-align: start;
@@ -175,6 +177,8 @@ body{
   to {width:80%}
 }
 
+
+
 @keyframes text-reveal-sliding-left{
   from {
     left: -250px;
@@ -258,6 +262,8 @@ body{
   animation-duration: 1.2s;
   animation-fill-mode: both;
 }
+
+
 
 
 .anim-underline-expand:after{
@@ -383,7 +389,7 @@ body{
 
 }
 .img-box-img{
-  width: 50%;
+  width: 35%;
   background-color: #669BBC;
 }
 
@@ -403,6 +409,7 @@ body{
   justify-content: center;
   padding: 1rem;
   width: 30%;
+  font-size: 1.2rem;
 
 }
 
@@ -430,6 +437,7 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap:10px;
   margin-bottom: 20px;
+  
   
  
   
@@ -512,6 +520,10 @@ body{
 
 }
 
+#show-more{
+  cursor: pointer;
+}
+
 /*Footer styling*/
 
 footer{
@@ -542,6 +554,11 @@ footer .footer-content ul{
   list-style: none;
 }
 
+footer .footer-content .footer-logo{
+  width: 12rem;
+  
+}
+
 
 footer .footer-c{
   font-size: 0.8rem;
@@ -567,6 +584,7 @@ footer .footer-c{
     width:100%;
     
   }
+  .img-box-text{font-size: 1rem;}
 
   .sway-left, .sway-right{
     margin-left: 0;
@@ -623,6 +641,7 @@ footer .footer-c{
 
 @media(max-width: 550px){
 
+  .hero-content{padding-top: 5rem;}
   .btn-red{
     margin: 10px 2px;
   }

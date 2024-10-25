@@ -7,7 +7,7 @@ const scrollTargets = document.querySelectorAll(".anim-on-scroll");
 const boxHeight = 250 //in px
 const boxheightMargin = 55
 let screenFactor = 2
-let shrinkedHeight =  screenFactor*(boxHeight+boxheightMargin) + "px"
+let shrinkedHeight =  screenFactor*(boxHeight+boxheightMargin) 
 const showMoreBtn = document.getElementById("show-more")
 const services = document.querySelector(".services-grid")
 
@@ -20,16 +20,18 @@ const services = document.querySelector(".services-grid")
 
 
 // show more box logic
-services.style.height = shrinkedHeight
+services.style.height = shrinkedHeight + "px"
 showMoreBtn.addEventListener("click",()=>{
  
   if(showMoreBtn.classList.contains("more")){
+    //expandContentToMax(services)
     services.style.height = 100 + "%"
     showMoreBtn.classList.remove("more")
     showMoreBtn.classList.add("less")
     showMoreBtn.textContent = "Show less"
   }else{
-    services.style.height = shrinkedHeight
+    services.style.height = shrinkedHeight + "px"
+ 
     showMoreBtn.classList.remove("less")
     showMoreBtn.classList.add("more")
     showMoreBtn.textContent = "Show more"
@@ -80,6 +82,10 @@ function scrollAnimationCallback(entries){
           target.classList.add('anim-text-reveal-right')
           target.classList.toggle('hide')
           //console.log("swaying right")
+        }else if(target.classList.contains('originate-btm')){
+          target.classList.add('anim-text-reveal-bottom')
+          target.classList.toggle('hide')
+          //console.log("swaying right")
         }else{
           //default animation
         }
@@ -96,11 +102,9 @@ function observeTargets(observer, targets){
 }
 
 // animations
-function expandContentToMax(content){
 
-}
 
-function shrinkContent(content, shrinkedHeight){
 
-}
+
+
 
